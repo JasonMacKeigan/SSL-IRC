@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="264.0" prefWidth="409.0">
+         <content>
+            <TextArea id="messageTextArea" editable="false" prefHeight="262.0" prefWidth="407.0" wrapText="true" />
+         </content>
+      </ScrollPane>
+      <ListView id="onlineUsers" layoutX="427.0" layoutY="14.0" prefHeight="264.0" prefWidth="159.0" />
+      <TextField fx:id="enterMessageField" layoutX="14.0" layoutY="282.0" prefHeight="30.0" prefWidth="409.0" />
+      <Button layoutX="510.0" layoutY="284.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="76.0" text="Logout" />
+      <Button fx:id="sendMessageButton" layoutX="427.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#onSendMessage" prefHeight="27.0" prefWidth="76.0" text="Send" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="titleLabel" layoutX="183.0" layoutY="14.0" prefHeight="29.0" prefWidth="235.0" text="SSL Encrypted Chat">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="217.0" layoutY="114.0" onKeyReleased="#onUsernameFieldTextUpdate" text="Guest4876" />
+      <Button layoutX="244.0" layoutY="180.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="114.0" text="Chat" />
+      <ComboBox fx:id="selectHost" layoutX="217.0" layoutY="147.0" onAction="#onComboBoxAction" prefHeight="27.0" prefWidth="167.0" promptText="Select Host" />
+      <Label id="versionLabel" layoutX="517.0" layoutY="289.0" text="Version 1.0" />
+      <Label id="outputLabel" alignment="CENTER" layoutX="186.0" layoutY="223.0" prefHeight="37.0" prefWidth="228.0" text="Enter a username, select a host and click the 'chat' button." textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" wrapText="true" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
