@@ -3,7 +3,7 @@
  */
 public enum Host {
     LOCAL("localhost", "localhost", 4321),
-    JASON("Jason (public)", "156.57.17.238", 4321)
+    JASON("Jason (public)", "private", 4321)
     ;
 
     private final String identifier;
